@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/Juspay_Cat/static/css/main.90f7cf61.css",
-    "main.js": "/Juspay_Cat/static/js/main.3ebf6883.js",
+    "main.js": "/Juspay_Cat/static/js/main.302876a3.js",
     "static/js/453.770174b8.chunk.js": "/Juspay_Cat/static/js/453.770174b8.chunk.js",
     "index.html": "/Juspay_Cat/index.html",
     "main.90f7cf61.css.map": "/Juspay_Cat/static/css/main.90f7cf61.css.map",
-    "main.3ebf6883.js.map": "/Juspay_Cat/static/js/main.3ebf6883.js.map",
+    "main.302876a3.js.map": "/Juspay_Cat/static/js/main.302876a3.js.map",
     "453.770174b8.chunk.js.map": "/Juspay_Cat/static/js/453.770174b8.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.90f7cf61.css",
-    "static/js/main.3ebf6883.js"
+    "static/js/main.302876a3.js"
   ]
 }
