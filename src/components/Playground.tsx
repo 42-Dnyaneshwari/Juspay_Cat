@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import Sprite from './Sprite';
+import Sprite from './Sprite'; // Import if needed for additional functionality
 import Controls from './Controls';
 
 const Playground: React.FC = () => {
@@ -11,13 +11,14 @@ const Playground: React.FC = () => {
 
   const boxWidth = 500;
   const boxHeight = 500;
-  const catSize = 100; // Increase the size of the cat
+  const catSize = 100; // Size of the cat
 
   const moveCat = () => {
     setCat((prev) => {
       let newX = prev.x + steps * Math.cos((prev.angle * Math.PI) / 180);
       let newY = prev.y + steps * Math.sin((prev.angle * Math.PI) / 180);
 
+      // Ensure cat stays within bounds
       newX = Math.min(Math.max(newX, 0), boxWidth - catSize);
       newY = Math.min(Math.max(newY, 0), boxHeight - catSize);
 
@@ -69,12 +70,19 @@ const Playground: React.FC = () => {
           className="relative border-4 border-blue-500 rounded-lg bg-white ml-4"
           style={{ width: boxWidth, height: boxHeight }}
         >
-                    <img 
+          <img 
             src={`${process.env.PUBLIC_URL}/cat.jpg`} 
             alt="Cat" 
-            style={{ width: '150px', height: 'auto', borderRadius: '8px' }} 
-            />  
-
+            style={{ 
+              position: 'absolute', 
+              left: `${cat.x}px`, 
+              top: `${cat.y}px`, 
+              transform: `rotate(${cat.angle}deg)`,
+              width: '100px',  // Adjusted size
+              height: 'auto', 
+              borderRadius: '8px' 
+            }} 
+          />
         </div>
       </div>
     </div>
