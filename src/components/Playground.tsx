@@ -69,7 +69,11 @@ const Playground: React.FC = () => {
           className="relative border-4 border-blue-500 rounded-lg bg-white ml-4"
           style={{ width: boxWidth, height: boxHeight }}
         >
-          <Sprite image="/sprite/cat.jpg" {...cat} size={catSize} />
+        <img 
+        src="https://tse4.mm.bing.net/th?id=OIP.UDQELsdJWyTtQA3KBRXjlAHaEj&pid=Api&P=0&h=220" 
+        alt="Cat" 
+        style={{ width: '150px', height: 'auto', borderRadius: '8px' }} 
+        />
         </div>
       </div>
     </div>
